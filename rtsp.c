@@ -282,7 +282,7 @@ void build_bonjour_strings(__attribute((unused)) rtsp_conn_info *conn) {
   else
     txt_records[entry_number++] = "md=0,1,2";
 #endif
-  txt_records[entry_number++] = "am=Shairport Sync";
+  txt_records[entry_number++] = "am=AudioAccessory5,1";
   txt_records[entry_number++] = "sf=0x4";
   txt_records[entry_number++] = "tp=UDP";
   txt_records[entry_number++] = "vn=65537";
@@ -294,7 +294,7 @@ void build_bonjour_strings(__attribute((unused)) rtsp_conn_info *conn) {
   // here, just replicate what happens in mdns.h when using those #defines
   txt_records[entry_number++] = "sf=0x4";
   txt_records[entry_number++] = firmware_version;
-  txt_records[entry_number++] = "am=ShairportSync";
+  txt_records[entry_number++] = "am=AudioAccessory5,1";
   txt_records[entry_number++] = "vs=105.1";
   txt_records[entry_number++] = "tp=TCP,UDP";
   txt_records[entry_number++] = "vn=65537";
