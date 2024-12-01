@@ -294,7 +294,7 @@ void build_bonjour_strings(__attribute((unused)) rtsp_conn_info *conn) {
   // here, just replicate what happens in mdns.h when using those #defines
   txt_records[entry_number++] = "sf=0x4";
   txt_records[entry_number++] = firmware_version;
-  txt_records[entry_number++] = "am=AudioAccessory5,1";
+  txt_records[entry_number++] = "am=ShairportSync";
   txt_records[entry_number++] = "vs=105.1";
   txt_records[entry_number++] = "tp=TCP,UDP";
   txt_records[entry_number++] = "vn=65537";
@@ -339,6 +339,7 @@ void build_bonjour_strings(__attribute((unused)) rtsp_conn_info *conn) {
   secondary_txt_records[entry_number++] = "rsf=0x0";
   secondary_txt_records[entry_number++] = firmware_version;
   secondary_txt_records[entry_number++] = "model=Shairport Sync";
+  secondary_txt_records[entry_number++] = "am=AudioAccessory5,1";
   snprintf(piString, sizeof(piString), "pi=%s", config.airplay_pi);
   secondary_txt_records[entry_number++] = piString;
   if ((conn != NULL) && (conn->airplay_gid != 0)) {
