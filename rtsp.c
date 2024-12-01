@@ -338,7 +338,7 @@ void build_bonjour_strings(__attribute((unused)) rtsp_conn_info *conn) {
   secondary_txt_records[entry_number++] = "acl=0";
   secondary_txt_records[entry_number++] = "rsf=0x0";
   secondary_txt_records[entry_number++] = firmware_version;
-  secondary_txt_records[entry_number++] = "model=Shairport Sync";
+  secondary_txt_records[entry_number++] = "model=AudioAccessory5,1";
   secondary_txt_records[entry_number++] = "am=AudioAccessory5,1";
   snprintf(piString, sizeof(piString), "pi=%s", config.airplay_pi);
   secondary_txt_records[entry_number++] = piString;
